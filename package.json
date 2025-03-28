@@ -20,7 +20,7 @@
   ],
   "scripts": {
     "build": "tsup",
-    "pub": "pnpm publish --access public"
+    "pub": "npm publish --access public"
   },
   "devDependencies": {
     "@types/node": "^18.19.84",
