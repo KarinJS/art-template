@@ -79,6 +79,4 @@ pnpm install
 - 使用 tsup 重新打包
 - 移除所有外部依赖
 - 减小包体积
-- 优化类型定义
-- 升级多个依赖包版本
-- 将 html-minifier 替换为 html-minifier-terser，解决高危安全警告
+- 讨厌`ci`每次碰到`ci`都会发生不幸...
