@@ -1,55 +1,42 @@
 {
-  "name": "art-template",
-  "typings": "index.d.ts",
+  "name": "@karinjs/art-template",
+  "version": "1.0.0",
   "description": "JavaScript Template Engine",
-  "homepage": "http://aui.github.com/art-template/",
-  "version": "4.13.2",
   "keywords": [
     "template"
   ],
-  "author": "tangbin <sugarpie.tang@gmail.com>",
+  "homepage": "https://github.com/karinjs/art-template",
   "repository": {
     "type": "git",
-    "url": "git://github.com/aui/art-template.git"
+    "url": "git://github.com/karinjs/art-template.git"
   },
-  "scripts": {
-    "build": "npm run build-lib && npm run build-web",
-    "build-lib": "rm -rf lib && babel src --out-dir lib",
-    "build-web": "export NODE_ENV=production && webpack",
-    "dev": "babel src --watch --out-dir lib",
-    "test": "export NODE_ENV=production && istanbul cover node_modules/mocha/bin/_mocha -- --ui exports --colors 'test/**/*.js'",
-    "coverage": "cat ./coverage/lcov.info | coveralls"
-  },
-  "main": "index.js",
+  "license": "MIT",
+  "author": "tangbin <sugarpie.tang@gmail.com>",
+  "main": "dist/index.js",
+  "typings": "index.d.ts",
   "files": [
-    "lib/",
+    "dist",
     "index.d.ts"
   ],
-  "engines": {
-    "node": ">= 1.0.0"
+  "scripts": {
+    "build": "tsup",
+    "pub": "pnpm publish --access public"
   },
-  "dependencies": {
+  "devDependencies": {
+    "@types/node": "^18.19.84",
     "acorn": "^5.0.3",
     "escodegen": "^1.8.1",
     "estraverse": "^4.2.0",
     "html-minifier": "^3.4.3",
     "is-keyword-js": "^1.0.3",
+    "istanbul": "^0.4.5",
     "js-tokens": "^3.0.1",
     "merge-source-map": "^1.0.3",
-    "source-map": "^0.5.6"
+    "source-map": "^0.5.6",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2"
   },
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "coveralls": "^2.13.0",
-    "eslint": "^3.19.0",
-    "eslint-loader": "^1.7.1",
-    "eslint-plugin-prettier": "^2.6.2",
-    "istanbul": "^0.4.5",
-    "mocha": "^5.2.0",
-    "node-noop": "^1.0.0",
-    "prettier": "^1.14.2",
-    "webpack": "^3.0.0"
-  },
-  "license": "MIT"
+  "engines": {
+    "node": ">= 16.0.0"
+  }
 }
