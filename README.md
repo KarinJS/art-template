@@ -30,6 +30,41 @@ yarn add @karinjs/art-template
 pnpm add @karinjs/art-template
 ```
 
+### 使用别名安装（兼容旧版本）
+
+如果你正在从原版 art-template 升级，可以使用包别名方式安装，这样无需修改任何代码：
+
+```bash
+# npm 别名安装
+npm install art-template@npm:@karinjs/art-template
+
+# yarn 别名安装
+yarn add art-template@npm:@karinjs/art-template
+
+# pnpm 别名安装
+pnpm add art-template@npm:@karinjs/art-template
+```
+
+或者在 `package.json` 中配置别名：
+
+```json
+{
+  "dependencies": {
+    "art-template": "npm:@karinjs/art-template"
+  }
+}
+```
+
+然后执行安装命令：
+
+```bash
+npm install
+# 或
+yarn
+# 或
+pnpm install
+```
+
 ## 优化对比
 
 | 指标     | 原版 art-template | @karinjs/art-template |

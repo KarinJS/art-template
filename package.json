@@ -1,6 +1,6 @@
 {
   "name": "@karinjs/art-template",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "JavaScript Template Engine",
   "keywords": [
     "template"
@@ -20,7 +20,7 @@
   ],
   "scripts": {
     "build": "tsup",
-    "pub": "pnpm publish --access public"
+    "pub": "npm publish --access public"
   },
   "devDependencies": {
     "@types/node": "^18.19.84",
