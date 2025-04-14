@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/KarinJS/art-template/compare/v1.0.0...v1.1.0) (2025-04-14)
+
+
+### Features
+
+* esm ([4b594b7](https://github.com/KarinJS/art-template/commit/4b594b7f02a455756390979bf9a2176daed55ef2))
+
 ## 1.0.0 (2025-03-28)
 
 
