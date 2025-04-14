@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/KarinJS/art-template/compare/v1.1.0...v1.1.1) (2025-04-14)
+
+
+### Bug Fixes
+
+* build error ([8939542](https://github.com/KarinJS/art-template/commit/8939542ee4c16f90d7d1a1adc1bd2f69346fa6eb))
+
 ## [1.1.0](https://github.com/KarinJS/art-template/compare/v1.0.0...v1.1.0) (2025-04-14)
 
 
